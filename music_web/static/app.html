@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        textarea {
+            resize: none; /* Prevent resizing of textarea */
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Classical Music</title>
+</head>
+<body>
+    <form action="http://.." method="post" enctype="multipart/form-data">
+        <h1>Classical Music</h1>
+        <p>Upload music file</p >
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+        <p>Result:</p >
+        <textarea id="output" rows="10" cols="50" readonly></textarea>
+    </form>
+
+    <div></div>
+</body>
+</html>
