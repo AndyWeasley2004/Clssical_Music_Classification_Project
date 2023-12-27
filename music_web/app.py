@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 import util
 import os
 
@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def root():
-    return 'Root'
+    return render_template('app.html')
 
 
 @app.route('/upload', methods=['POST'])
